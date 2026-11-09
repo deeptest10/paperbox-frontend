@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід - PaperBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PaperBox</h1>
+    </header>
+
+    <main>
+        <p><a href="index.html">До каталогу</a></p>
+        <h2>Вхід</h2>
+
+        <form id="login-form">
+            <p>
+                <label for="username">Ім’я користувача</label><br>
+                <input id="username" name="username" autocomplete="username" required>
+            </p>
+            <p>
+                <label for="password">Пароль</label><br>
+                <input id="password" name="password" type="password"
+                       autocomplete="current-password" required>
+            </p>
+            <button type="submit">Увійти</button>
+        </form>
+
+        <p>Ще не маєте акаунта? <a id="register-link" href="register.html">Зареєструватися</a></p>
+
+        <p id="status" role="status"></p>
+    </main>
+</body>
+</html>

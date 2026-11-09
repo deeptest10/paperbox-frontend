@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Реєстрація - PaperBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PaperBox</h1>
+        <a href="index.html">До каталогу</a>
+    </header>
+
+    <main>
+        <h2>Реєстрація</h2>
+        <p>Ім’я та прізвище можна не вказувати.</p>
+
+        <form id="register-form" method="post">
+            <p>
+                <label for="username">Ім’я користувача</label><br>
+                <input id="username" name="username" autocomplete="username" required>
+                <small id="error-username"></small>
+            </p>
+            <p>
+                <label for="first_name">Ім’я</label><br>
+                <input id="first_name" name="first_name" autocomplete="given-name">
+                <small id="error-first_name"></small>
+            </p>
+            <p>
+                <label for="last_name">Прізвище</label><br>
+                <input id="last_name" name="last_name" autocomplete="family-name">
+                <small id="error-last_name"></small>
+            </p>
+            <p>
+                <label for="email">Електронна пошта</label><br>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <small id="error-email"></small>
+            </p>
+            <p>
+                <label for="password">Пароль (від 8 символів)</label><br>
+                <input id="password" name="password" type="password"
+                       autocomplete="new-password" minlength="8" maxlength="128" required>
+                <small id="error-password"></small>
+            </p>
+            <p>
+                <label for="password_confirmation">Повторіть пароль</label><br>
+                <input id="password_confirmation" name="password_confirmation" type="password"
+                       autocomplete="new-password" minlength="8" maxlength="128" required>
+                <small id="error-password_confirmation"></small>
+            </p>
+
+            <button type="submit">Зареєструватися</button>
+            <p id="register-message" role="status"></p>
+        </form>
+
+        <a id="login-link" href="login.html">Вже маєте акаунт? Увійти</a>
+    </main>
+</body>
+</html>
